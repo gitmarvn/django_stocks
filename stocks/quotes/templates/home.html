@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
 
+{% if ticker %}
+    {{ ticker }}
+{% endif %}
 {% if api %}
     {% if api == "Error..." %}
         There was a problem with your ticker symbol, please try again
